@@ -16,7 +16,12 @@ const TaskList = ({ task }) => {
             </div>
 
             <div>
-              <RiDeleteBack2Fill style={{}} />
+              <RiDeleteBack2Fill style={{
+                cursor: 'pointer',
+                marginRight:"20px",
+                fontSize:"2rem",
+                boxShadow:"2px 2px 2px #ECAB9E"
+              }} />
             </div>
           </div>
         );
