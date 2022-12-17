@@ -34,7 +34,7 @@ const Home = () => {
         onClick={() => {toggle()}}
         size="lg"
         variant="danger">{text}</Button>
-       { isOpen && <AddTask />}
+       { isOpen && <AddTask getTask={getTask} />}
 
       <TaskList task={task} />
     </div>
