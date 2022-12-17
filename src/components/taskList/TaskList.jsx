@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { RiDeleteBack2Fill } from "react-icons/ri";
 
-const TaskList = ({ task }) => {
+const TaskList = ({ task,getTask }) => {
 
   const deleteTask = async(id) =>{
     const url="https://63525cefa9f3f34c373b99f2.mockapi.io/api/tasks"
@@ -11,9 +11,8 @@ const TaskList = ({ task }) => {
     } catch (error) {
       
     }
-
+    getTask(); //yenilenmeden silmesi için ekledik. Home dan gönderdik TaskList fonk. ekledik.
   }
-
 
 
 
